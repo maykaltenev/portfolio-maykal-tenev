@@ -6,12 +6,37 @@ main {
     "the-road"
     "about"
     "adventure";
+  // cover photo
   article:first-child {
     height: 30%;
     width: 100%;
     background-image: url(.././images/pawel-czerwinski-b7ibFp72VAg-unsplash.png);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  //   Work experience
+  article:nth-of-type(2) {
+    grid-area: the-road;
+    width: 100%;
+    height: 80%;
+    background-color: $mint;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px red solid;
+    //  cards
+    > div {
+      border: 2px solid $glow-white;
+      box-shadow: 2px 3px 5px $milky-green;
+      width: 16rem;
+      padding: 0.3rem 0.5rem;
+      margin: 0.5rem;
+      height: 5rem;
+      justify-content: space-between;
+    }
+    // all the even to the right
+    :nth-child(even) {
+      align-self: flex-end;
+    }
   }
 }
