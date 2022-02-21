@@ -1,0 +1,31 @@
+// set the navbar align
+header {
+  height: 100%;
+  width: 100%;
+  border: 1px black solid;
+  background-color: red;
+  // hide the desktop navigation for mobile
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  :nth-child(2) {
+    display: none;
+  }
+  // creating the lines
+  .hamburger {
+    width: 2rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    // controlling the size of the lines
+    div {
+      width: 2rem;
+      height: 0.3rem;
+      background-color: black;
+      border-radius: 4px;
+      border: 0.05rem black solid;
+    }
+  }
+}
