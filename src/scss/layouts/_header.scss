@@ -2,17 +2,18 @@
 header {
   height: 100%;
   width: 100%;
-  border: 1px black solid;
-  background-color: red;
-  // hide the desktop navigation for mobile
+  background-color: $mint;
+  // pushing the logo and the hamburger menu to the two sides
   nav {
     display: flex;
     justify-content: space-between;
   }
+  //  logo size
   :first-child img {
     width: 60%;
     height: 100%;
   }
+  // hide the desktop navigation for mobile
   :nth-child(2) {
     display: none;
   }
