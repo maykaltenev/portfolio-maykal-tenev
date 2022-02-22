@@ -1,6 +1,6 @@
-//Import Layout files
-@import "./header";
-@import "./main";
+@import "./header-portfolio.scss";
+@import "./main-portfolio.scss";
+@import "./footer-portfolio.scss";
 
 body {
   width: 100vw;
@@ -10,4 +10,5 @@ body {
     "top"
     "main"
     "footer";
+  background-color: red;
 }
