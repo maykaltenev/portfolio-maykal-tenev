@@ -2,13 +2,12 @@
 @import "./main-portfolio.scss";
 @import "./footer-portfolio.scss";
 
-body {
+.portfolio {
   width: 100vw;
   display: grid;
-  grid-template-rows: 15vh 100vh 22vh;
+  grid-template-rows: 15vh 250vh 22vh;
   grid-template-areas:
     "top"
     "main"
     "footer";
-  background-color: red;
 }
