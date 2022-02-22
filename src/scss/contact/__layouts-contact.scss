@@ -1,0 +1,12 @@
+@import "./header-contact";
+@import "./main-contact";
+@import "./footer-contact";
+.contact {
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 15vh 100vh 22vh;
+  grid-template-areas:
+    "top"
+    "main"
+    "footer";
+}
