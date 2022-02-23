@@ -1,13 +1,13 @@
 main {
   grid-area: main;
-  grid-template-rows: 5vh 80vh 40vh;
+  grid-template-rows: 5vh 100vh 10vh;
   grid-template-areas:
     "banner"
     "the-road"
     "about";
   // cover photo
   .banner {
-    height: 60%;
+    height: 50%;
     width: 100%;
     background-image: url(.././images/pawel-czerwinski-b7ibFp72VAg-unsplash.png);
     background-size: cover;
@@ -72,26 +72,40 @@ main {
   article:nth-child(3) {
     grid-area: about;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
-    height: 100%;
+    height: 60%;
     background-color: $moss-green;
     // photo on the left
     .about-photo {
-      border: 1px red solid;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      align-self: flex-end;
       img {
-        width: 100%;
-        height: 50%;
+        width: 15rem;
+        border-radius: 2rem;
       }
     }
     // text on the right from photo
     .about-main {
       width: 50%;
-      height: 40%;
+      height: 50%;
       align-self: center;
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
+  .the-road .visit-card {
+    border: 5px red solid;
+    width: 28rem;
+    height: 12rem;
+  }
+  .the-road {
+    height: 100%;
+  }
+  .about {
+    height: 90%;
+    img {
+      align-self: center;
+      width: 30rem;
     }
   }
 }
