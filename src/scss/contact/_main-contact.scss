@@ -165,3 +165,22 @@
     }
   }
 }
+
+// responsive design tablet/small desktop
+@media only screen and (min-width: 900px) {
+  header nav :nth-child(2) {
+    display: block;
+    @include nav-header;
+    justify-content: center;
+    ul li a {
+      font-size: 1.6rem;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header nav :nth-child(2) {
+    ul li a {
+      font-size: 2rem;
+    }
+  }
+}
