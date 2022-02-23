@@ -1,3 +1,4 @@
+// form container
 .contact main {
   grid-area: main;
   width: 100%;
@@ -8,6 +9,7 @@
   background-image: url(".././images/backgrounds/contact.png");
   background-size: cover;
   background-repeat: no-repeat;
+  // top part
   .head {
     width: 80%;
     height: 15%;
@@ -32,26 +34,78 @@
       border-bottom: 4px $dark-mint solid;
     }
   }
+  // the whole form is a column
   form {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 60%;
-    border: 1px red solid;
-    font-size: 1.2rem;
-
-    .mail-info,
-    .client-info {
-      border: 1px blue solid;
-      display: flex;
-      justify-content: space-around;
+    align-self: center;
+    width: 80%;
+    height: 80%;
+    font-size: 1.3rem;
+    z-index: 1;
+    color: #232526;
+    border-top: 5px $milky-green solid;
+    border-bottom: 5px $milky-green solid;
+    border-left: 2px #3bc5c8f2 solid;
+    border-right: 2px #d00a0a95 solid;
+    // play with form colors
+    background-color: #5b8fc69b;
+    box-shadow: 0 0.5rem 5rem 1rem #cde5fe9b;
+    //  form
+    border-radius: 2rem;
+    // name and contact next to each other
+    .f-name-email {
       width: 100%;
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border: 1px red solid;
+      // names and contacts of the client
+      .mail-info,
+      .client-info {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-self: flex-start;
+        // boxes on top of each other
+        div {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+      }
     }
+    // size of the client input
     input[type="text"],
     input[type="telephone"],
     input[type="email"] {
-      width: 9rem;
+      width: 10rem;
     }
+    // checkbox bigger
+    .service {
+      border: 1px red solid;
+      width: 100%;
+      height: 65%;
+      display: flex;
+      input[type="checkbox"] {
+        width: 1.3rem;
+        height: 1.3rem;
+      }
+    }
+  }
+  // content with purple glow behind the form
+  form::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+    background-color: rgba(172, 91, 96, 0.688);
+    box-shadow: 0 0.5rem 1rem 1rem #db3df77e;
+    opacity: 0.3;
+    border-radius: 6rem;
   }
 }
