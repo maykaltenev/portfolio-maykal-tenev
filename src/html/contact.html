@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../fonts/fontawesome-free-6.0.0-web/css/all.css">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link
+      rel="stylesheet"
+      href="../fonts/fontawesome-free-6.0.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
     <title>Contacts</title>
   </head>
   <body class="contact">
     <header>
       <nav>
         <div class="logo">
-            <a href="../index.html">
-          <img
-            src="../images/logo-web-solutions.png"
-            alt="logo-web-solutions"
-          />
-        </a>
+          <a href="../index.html">
+            <img
+              src="../images/logo-web-solutions.png"
+              alt="logo-web-solutions"
+            />
+          </a>
         </div>
         <!-- hidden in laptop/desktop -->
         <div class="desktop-nav">
@@ -45,97 +48,120 @@
       </div>
       <!-- Container with projects -->
       <ul class="social">
-        <li><a href="./html/portfolio.html"><i>Facebook</i></a></li>
-        <li><a href="#"><i>Instagram</i></a></li>
-        <li><a href="#"><i>GitHub</i></a></li>
-        <li><a href="#"><i>LinkedIn</i></a></li>
+        <li>
+          <a href="./html/portfolio.html"><i>Facebook</i></a>
+        </li>
+        <li>
+          <a href="#"><i>Instagram</i></a>
+        </li>
+        <li>
+          <a href="#"><i>GitHub</i></a>
+        </li>
+        <li>
+          <a href="#"><i>LinkedIn</i></a>
+        </li>
       </ul>
       <!-- map -->
       <!-- <article class="map">Map for the office</article> -->
       <!-- form for clients -->
       <form action="#">
         <div class="f-name-email">
-        <div class="client-info">
-          <div class="fname">
-          <label for="fname">First name</label>
-          <input type="text" placeholder="First Name" id="fname">
-         </div>
-         <div class="fname">
-          <label for="lname">Last name</label>
-          <input type="text" placeholder="Last Name" id="lname">
-         </div>
-         </div>
-         <div class="mail-info">
-          <div class="email">
-            <label for="email">Email</label>
-            <input type="email" placeholder="Email" id="email">
+          <div class="client-info">
+            <div class="fname">
+              <label for="fname">First name</label>
+              <input type="text" placeholder="First Name" id="fname" />
+            </div>
+            <div class="fname">
+              <label for="lname">Last name</label>
+              <input type="text" placeholder="Last Name" id="lname" />
+            </div>
           </div>
-        <div>
-          <label for="telephone">Tel.</label>
-          <input type="telephone" placeholder="Telephone" id="telephone">
+          <div class="mail-info">
+            <div class="email">
+              <label for="email">Email</label>
+              <input type="email" placeholder="Email" id="email" />
+            </div>
+            <div>
+              <label for="telephone">Tel.</label>
+              <input type="telephone" placeholder="Telephone" id="telephone" />
+            </div>
+          </div>
         </div>
+        <!-- Service Interest -->
+        <div class="service">
+          <!-- span title -->
+          <span class="service-interest">Service of Interest:</span>
+          <div class="design">
+            <input type="checkbox" id="design" />
+            <label for="design">Web design</label>
+          </div>
+          <div class="mobile">
+            <input type="checkbox" id="mobile" />
+            <label for="mobile">Mobile Design</label>
+          </div>
+          <div class="marketing">
+            <input type="checkbox" id="marketing" />
+            <label for="marketing">Marketing & Advertising</label>
+          </div>
+          <div class="social-network">
+            <input type="checkbox" id="social-netwrok" />
+            <label for="social-netwrok">Social Networks maintaining</label>
+          </div>
         </div>
+        <!-- Budget -->
+
+        <div class="budget-project">
+          <!-- Budget title -->
+          <span>Budget Range?</span>
+          <div class="budget">
+            <input type="radio" id="small-budget" name="budget" />
+            <label for="small-budget"> 7.5k +</label>
+            <input type="radio" id="medium-budget" name="budget" />
+            <label for="medium-budget" name="budget"> 15k +</label>
+            <input type="radio" id="big-budget" name="budget" />
+            <label for="big-budget"> 30k +</label>
+            <input type="radio" id="large-budget" name="budget" />
+            <label for="large-budget"> 50k +</label>
+          </div>
         </div>
-       
-        <span class="service-interest">Service of Interest:</span>
-        <div class="design">
-        <input type="checkbox" id="design">
-        <label for="design">Web design</label>
-        </div>
-      <div class="mobile">
-        <input type="checkbox" id="mobile">
-        <label for="mobile">Mobile Design</label>
-      </div>
-      <div class="marketing">
-        <input type="checkbox" id="marketing">
-        <label for="marketing">Marketing & Advertising</label>
-      </div>
-      <div class="social-network">
-        <input type="checkbox" id="social-netwrok">
-        <label for="social-netwrok">Social Networks maintaining</label>
-    </div>
-         <!-- span title  -->
-         <div class="budget-project">
-         <span>Budget Range?</span>
-         <label for="budget"> 7.5k +</label>
-         <input type="radio" id="budget">
-         <label for="budget"> 15k +</label>
-         <input type="radio" id="budget">
-         <label for="budget"> 30k +</label>
-         <input type="radio" id="budget">
-         <label for="budget"> 50k +</label>
-         <!-- about the project -->
-         <label for="textarea">Let us know about your project?</label>
-         <textarea name="textarea" id="textarea"  rows="2" ></textarea>
-        </form>
+        <!-- about the project -->
+        <label for="textarea">Let us know about your project?</label>
+        <textarea name="textarea" id="textarea" rows="2"></textarea>
+      </form>
     </main>
     <footer class="footer-contact">
-        <div class="footer-nav">
-            <ul>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./portfolio.html">Projects</a></li>
-                <li><a href="./adventure.html">Adventure</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </div>
-            <hr>    
-            <div class="second-nav">
-              <a href="../index.html">
-              <img
-                src="../images/logo-web-solutions.png"
-                alt="logo-web-solutions"
-              /></a>
-              <!-- social media accounts-->
-           <nav class="social">
-            <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i> </a></li>
-            </ul>
-          </nav> 
-          </div>
-          <span>&copy;Maykal Tenev 2022</span>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./portfolio.html">Projects</a></li>
+          <li><a href="./adventure.html">Adventure</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </div>
+      <hr />
+      <div class="second-nav">
+        <a href="../index.html">
+          <img src="../images/logo-web-solutions.png" alt="logo-web-solutions"
+        /></a>
+        <!-- social media accounts-->
+        <nav class="social">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i> </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <span>&copy;Maykal Tenev 2022</span>
     </footer>
   </body>
 </html>
