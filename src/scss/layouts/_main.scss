@@ -1,6 +1,6 @@
 main {
   grid-area: main;
-  grid-template-rows: 5vh 60vh 30vh;
+  grid-template-rows: 5vh 80vh 40vh;
   grid-template-areas:
     "banner"
     "the-road"
@@ -17,7 +17,7 @@ main {
   article:nth-of-type(2) {
     grid-area: the-road;
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: $mint;
     display: flex;
     flex-direction: column;
@@ -78,8 +78,14 @@ main {
     background-color: $moss-green;
     // photo on the left
     .about-photo {
-      width: 50%;
-      height: 70%;
+      border: 1px red solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+        height: 50%;
+      }
     }
     // text on the right from photo
     .about-main {
@@ -88,42 +94,4 @@ main {
       align-self: center;
     }
   }
-  // // adventure
-  // article:nth-child(4) {
-  //   grid-area: adventure;
-  //   background-image: url();
-  //   width: 92%;
-  //   height: 60%;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-around;
-  //   border: 1px red solid;
-  //   padding: 2rem 1rem;
-
-  //   div {
-  //     width: 75%;
-  //     height: 45%;
-  //     border: 1px $dark-mint solid;
-  //     border-radius: 5%;
-  //     padding: 0.5% 1.5%;
-  //     background-color: #94e1d2;
-
-  //     p {
-  //       width: 100%;
-  //       height: 90%;
-  //       border: 1px $mint solid;
-  //       background-color: mintcream;
-  //       border-radius: 5%;
-  //       margin-top: 5%;
-  //       text-align: center;
-  //     }
-  //   }
-  //   div:nth-child(odd) {
-  //     flex-direction: column;
-  //     align-self: flex-end;
-  //     height: 45%;
-  //     border: 1px $dark-mint solid;
-  //     padding: 0.5% 1.5%;
-  //   }
-  // }
 }
