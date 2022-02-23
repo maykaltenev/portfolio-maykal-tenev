@@ -2,9 +2,10 @@
 .contact main {
   grid-area: main;
   width: 100%;
-  height: 100%;
+  height: 100;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background-color: #5f5da6;
   background-image: url(".././images/backgrounds/contact.png");
   background-size: cover;
@@ -12,7 +13,7 @@
   // top part
   .head {
     width: 80%;
-    height: 15%;
+    height: 3%;
     align-self: center;
     margin-bottom: 2rem;
     text-align: center;
@@ -40,8 +41,9 @@
     display: flex;
     flex-direction: column;
     align-self: center;
+    padding-top: 5%;
     width: 70%;
-    height: 35rem;
+    height: 40%;
     font-size: 1.1rem;
     z-index: 1;
     color: #232526;
@@ -145,5 +147,21 @@
     box-shadow: 0 0.5rem 1rem 1rem #db3df77e;
     opacity: 0.3;
     border-radius: 6rem;
+  }
+  // address
+  .map {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 20%;
+    align-self: center;
+    box-shadow: 1rem 0.5rem 4rem 1rem #db3df77e;
+    p {
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      text-align: center;
+      font-weight: 900;
+      border: 2px #db3df77e transparent;
+    }
   }
 }
