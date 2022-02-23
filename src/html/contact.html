@@ -53,14 +53,25 @@
       <!-- <article class="map">Map for the office</article> -->
       <!-- form for clients -->
       <form action="#">
+        <div class="client-info">
+         <div class="fname">
         <label for="fname">First name</label>
         <input type="text" placeholder="First Name" id="fname">
-        <label for="fname">Last name</label>
+        </div>
+         <div class="fname">
+        <label for="lname">Last name</label>
         <input type="text" placeholder="Last Name" id="lname">
+         </div>
+        </div>
+ 
+         <div class="mail-info">
+            <div class="email">
         <label for="email">Email</label>
         <input type="email" placeholder="Email" id="email">
-        <label for="telephone">Phone number</label>
-        <input type="number" placeholder="Telephone" id="telephone">
+        <label for="telephone">Tel.</label>
+        <input type="telephone" placeholder="Telephone" id="telephone">
+        </div>
+        <div class="service">
         <span class="service-interest">Service of Interest</span>
         <label for="design">Web design</label>
         <input type="checkbox" id="design">
@@ -70,7 +81,9 @@
         <input type="checkbox" id="marketing">
         <label for="social-netwrok">Social Networks maintaining</label>
         <input type="checkbox" id="social-netwrok">
+    </div>
          <!-- span title  -->
+         <div class="budget-project">
          <span>Budget Range?</span>
          <label for="budget"> 7.5k +</label>
          <input type="radio" id="budget">
@@ -82,7 +95,7 @@
          <!-- about the project -->
          <label for="textarea">Let us know about your project?</label>
          <textarea name="textarea" id="textarea"  rows="2" ></textarea>
-       </form>
+        </form>
     </main>
     <footer class="footer-contact">
         <div class="footer-nav">
