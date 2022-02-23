@@ -39,4 +39,31 @@
   img {
     width: 10rem;
   }
+  .second-nav {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      width: 12rem;
+      height: 80%;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+
+      li {
+        a {
+          font-size: 1.3rem;
+          text-decoration: none;
+          color: $milky-green;
+        }
+      }
+    }
+  }
+  span {
+    display: flex;
+    justify-content: right;
+    width: 10rem;
+    font-weight: bold;
+  }
 }
