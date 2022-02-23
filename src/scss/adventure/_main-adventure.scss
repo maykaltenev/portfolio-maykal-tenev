@@ -1,4 +1,5 @@
 .adventure {
+  background-color: #5f5da6;
   .head {
     width: 80%;
     height: 15%;
@@ -8,7 +9,6 @@
   }
   article {
     display: flex;
-    background-color: #5f5da6;
     background-image: url(".././images/backgrounds/contact.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 1px red solid;
 
     div {
       width: 75%;

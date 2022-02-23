@@ -1,10 +1,11 @@
 @import "./header-adventure";
 @import "./main-adventure";
 @import "./footer-adventure";
+
 .adventure {
   width: 100vw;
   display: grid;
-  grid-template-rows: 15vh 100vh 10vh;
+  grid-template-rows: 15vh 100vh 5vh;
   grid-template-areas:
     "top"
     "main"
