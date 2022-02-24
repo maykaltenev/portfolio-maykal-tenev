@@ -7,7 +7,7 @@ main {
     "about";
   // cover photo
   .banner {
-    height: 40%;
+    height: 50%;
     width: 100%;
     background-image: url(../../images/brian-lundquist-I3qLDIdlOho-unsplash.png);
     background-size: cover;
@@ -53,60 +53,15 @@ main {
             font-size: 3.5rem;
             text-decoration: none;
             align-self: space-around;
-            color: $milky-green;
+            color: $wild-logo-black-a;
             cursor: pointer;
           }
         }
       }
     }
-    //  cards is an exp for extra page
-    //   > div {
-    //     display: flex;
-    //     border: 2px solid $glow-white;
-    //     border-radius: 1rem;
-    //     box-shadow: 2px 3px 5px $milky-green;
-    //     width: 25rem;
-    //     padding: 0.3rem 0.5rem;
-    //     margin: 1%;
-    //     height: 7rem;
-    //   }
-    //   // all the even to the right
-    //   div .circle {
-    //     border-radius: 1rem;
-    //     width: 15rem;
-    //     height: 5rem;
-    //     border: 1px $dark-mint solid;
-    //     display: flex;
-    //     // inside year
-    //     .time-line {
-    //       display: flex;
-    //       height: 100%;
-    //       width: 100%;
-    //       justify-content: center;
-    //       align-items: flex-end;
-    //     }
-    //   }
-    //   // text
-    //   p {
-    //     margin: 1% 1%;
-    //     padding: 0.4rem 0.5rem;
-    //     border-radius: 1rem;
-    //     border: 1px $dark-mint solid;
-    //     height: 80%;
-    //     text-align: justify;
-    //   }
-    //   p:hover {
-    //     height: 90%;
-    //     z-index: 1;
-    //     background-color: $milky-green;
-    //     box-shadow: 2px 3px 10px $deep-green;
-    //   }
-    //   :nth-child(even) {
-    //     align-self: flex-end;
-    //   }
-    // }
+
     //   about me section
-    article:nth-child(4) {
+    article .about {
       grid-area: about;
       display: flex;
       justify-content: space-evenly;
