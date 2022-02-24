@@ -1,38 +1,186 @@
-// set the navbar align
-.adventure header {
-  grid-area: top;
+// form container
+.adventure main {
+  grid-area: main;
   width: 100%;
-  height: 100%;
-  background-color: $mint;
-  // pushing the logo and the hamburger menu to the two sides
-  nav {
+  height: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #5f5da6;
+  background-image: url(".././images/backgrounds/contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  // top part
+  .head {
+    width: 80%;
+    height: 3%;
+    align-self: center;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
-  //  logo size
-  :first-child img {
-    width: 60%;
-    height: 100%;
+  li {
+    justify-content: space-evenly;
+    a {
+      text-decoration: none;
+      color: $milky-green;
+    }
+    a:hover {
+      border-bottom: 4px $dark-mint solid;
+    }
   }
-  // hide the desktop navigation for mobile
-  :nth-child(2) {
-    display: none;
-  }
-  // creating the lines
-  .hamburger {
-    width: 4rem;
-    height: 2rem;
+  // the whole form is a column
+  form {
+    position: relative;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     align-self: center;
-    // controlling the size of the lines
-    div {
-      width: 2rem;
-      height: 0.4rem;
-      background-color: black;
-      border-radius: 4px;
-      border: 0.05rem black solid;
+    padding-top: 5%;
+    width: 70%;
+    height: 40%;
+    font-size: 1.1rem;
+    background: radial-gradient(#e66465, #9198e5);
+    color: #232526;
+    border-top: 5px $milky-green solid;
+    border-bottom: 5px $milky-green solid;
+    border-left: 2px #3bc5c8f2 solid;
+    border-right: 2px #d00a0a95 solid;
+    // play with form colors
+    background-color: #5b8fc69b;
+    box-shadow: 0 0.5rem 5rem 1rem #cde5fe9b;
+    //  form
+    border-radius: 2rem;
+    // name and contact next to each other
+    .f-name-email {
+      margin: 1%;
+      width: 100%;
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      // names and contacts of the client
+      .mail-info,
+      .client-info {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-self: flex-start;
+        // boxes on top of each other
+        div {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+      }
+    }
+    // size of the client input
+    input[type="text"],
+    input[type="telephone"],
+    input[type="email"] {
+      width: 8rem;
+    }
+    // checkbox services
+    .service {
+      margin: 1%;
+      width: 80%;
+      height: 25%;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-content: space-evenly;
+      span {
+        font-weight: 900;
+        // checkbox bigger
+        input[type="checkbox"] {
+          width: 1.5rem;
+          height: 1.3rem;
+        }
+      }
+    }
+    // radio for the budget
+    .budget-project {
+      margin: 1%;
+      width: 80%;
+      height: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-self: center;
+      span {
+        font-weight: 900;
+        align-self: center;
+      }
+    }
+    .about-project {
+      width: 80%;
+      height: 20%;
+      display: flex;
+      margin: 1%;
+      flex-direction: column;
+      align-self: center;
+
+      label {
+        font-weight: 900;
+      }
+      textarea {
+        width: 100%;
+        height: 100%;
+        border: 1px red solid;
+      }
+    }
+  }
+  // content with purple glow behind the form
+  // form::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 35rem;
+  //   background-color: rgba(172, 91, 96, 0.688);
+  //   box-shadow: 0 0.5rem 1rem 1rem #db3df77e;
+
+  //   border-radius: 6rem;
+  // }
+  // address
+  .map {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 20%;
+    align-self: center;
+    box-shadow: 1rem 0.5rem 4rem 1rem #db3df77e;
+    p {
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      text-align: center;
+      font-weight: 900;
+      border: 2px #db3df77e transparent;
+    }
+  }
+}
+// responsive design tablet/small desktop
+@media only screen and (min-width: 900px) {
+  header nav :nth-child(2) {
+    border: 1px red solid;
+    display: block;
+    @include nav-header;
+    justify-content: center;
+    ul li a {
+      font-size: 1.6rem;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header nav :nth-child(2) {
+    ul li a {
+      font-size: 2rem;
     }
   }
 }

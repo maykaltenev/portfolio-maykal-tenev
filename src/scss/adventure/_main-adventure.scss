@@ -17,15 +17,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
     div {
       width: 75%;
       height: 45%;
       border: 1px $dark-mint solid;
       border-radius: 5%;
-
       background-color: #94e1d2;
-
       p {
         width: 100%;
         height: 90%;

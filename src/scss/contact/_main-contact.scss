@@ -165,10 +165,10 @@
     }
   }
 }
-
 // responsive design tablet/small desktop
 @media only screen and (min-width: 900px) {
   header nav :nth-child(2) {
+    border: 1px red solid;
     display: block;
     @include nav-header;
     justify-content: center;
