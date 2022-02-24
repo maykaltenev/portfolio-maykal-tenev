@@ -1,6 +1,6 @@
 main {
   grid-area: main;
-  grid-template-rows: 5vh 80vh 25vh;
+  grid-template-rows: 5vh 60vh 25vh;
   grid-template-areas:
     "banner"
     "the-road"
@@ -18,22 +18,21 @@ main {
   article:nth-of-type(2) {
     grid-area: the-road;
     width: 100%;
-    height: 100%;
+    height: 60%;
     background-color: $mint;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px red solid;
+
     .digital {
       width: 100%;
-      height: 30%;
-      border: 1px red solid;
+      height: 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
       .we-are {
-        height: 20%;
+        height: 50%;
         font-size: 2rem;
         font-weight: 900;
       }
@@ -63,28 +62,31 @@ main {
       }
     }
     //   about me section
-    article :last-child() {
-      grid-area: about;
+  }
+  article:nth-of-type(3) {
+    grid-area: about;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80%;
+    background: $wild-purple;
+
+    // photo on the left
+    .about-photo {
       display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-      height: 100%;
-      background-color: $gray-blue;
-      border: 5px red solid;
-      // photo on the left
-      .about-photo {
-        img {
-          width: 300px;
-          height: 200px;
-          border-radius: 2rem;
-        }
+      align-items: center;
+      img {
+        margin-left: 5%;
+        width: 15rem;
+        height: 13rem;
+        border-radius: 2rem;
       }
-      // text on the right from photo
-      .about-main {
-        width: 50%;
-        height: 50%;
-        align-self: center;
-      }
+    }
+    // text on the right from photo
+    .about-main {
+      width: 50%;
+      height: 50%;
+      align-self: center;
     }
   }
   // telephone is the default

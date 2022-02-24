@@ -1,7 +1,7 @@
 .footer-main {
   grid-area: footer;
   width: 100%;
-  height: 25%;
+  height: 35%;
   display: flex;
   flex-direction: column;
   background-color: $wild-nav-blue-a;
@@ -24,7 +24,8 @@
         }
         a:hover {
           padding-bottom: 3px;
-          border-bottom: 2px $milky-green solid;
+          color: $wild-hover;
+          border-bottom: 1px $wild-hover solid;
           transition: 0.4 ease-in;
         }
       }
