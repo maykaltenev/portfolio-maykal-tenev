@@ -90,6 +90,17 @@
     input[type="email"] {
       width: 8rem;
     }
+
+    input[type="button"] {
+      margin: 1% 5%;
+      align-self: flex-start;
+      width: 7rem;
+      height: 3rem;
+      background: radial-gradient(#e66465, #9198e5);
+      border-color: $milky-green;
+      color: #232526;
+      border-radius: 3rem;
+    }
     // checkbox services
     .service {
       margin: 1%;
@@ -174,8 +185,6 @@
     }
     .service {
       width: 40%;
-
-      border: 1px red solid;
     }
   }
 }
@@ -185,11 +194,23 @@
       font-size: 2rem;
     }
   }
-  .contact main form {
-    input[type="text"],
-    input[type="telephone"],
-    input[type="email"] {
-      width: 15rem;
+
+  .contact main {
+    .head {
+      font-size: 1.6rem;
+      p {
+        text-align: right;
+      }
+    }
+    form {
+      input[type="text"],
+      input[type="telephone"],
+      input[type="email"] {
+        width: 15rem;
+      }
+      input[type="button"] {
+        margin-left: 10%;
+      }
     }
   }
 }
