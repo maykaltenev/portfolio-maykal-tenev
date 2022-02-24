@@ -1,153 +1,57 @@
-## I need a good sass project structure, Can you help me?
+## Portfolio Maykal Tenev
 
-## Get Started
+[Test this app yourself](maykaltenev.github.io/log-in-page/)
 
-- [Structure](#structure)
-- [Importing](#importing)
-- [File declaration](#file-declaration)
-- [Setup](#setup)
+---
 
-## Structure
+![log-in-first](./images/log-in-first.png)
 
-Because many of you having a hard time structuring or working around the new structure of sass. I thought, I would share with you. The general setup that you might want to have on your build. Of course sometimes things can change, but this is an overlook on what you can have.
+## The updated version you can find in the branch flexbox
 
-```
-scss/
-|
-|- abstracts/
-|	|- __abstracts-dir.scss     # Import all abstracts .scss files
-|	|- _fonts.scss              # Font Import
-|	|- _mixins.scss             # Scss Mixins
-|	|- _variables.scss          # Scss Variables
-|	|- _functions.scss          # Scss Functions(if you have)
-|
-|- base/
-|	|- __base-dir.scss          # Import all base .scss files
-|	|- _reset.scss              # Custom Reset/Normalize
-|	|- _typography.scss         # Typography Rules
-|	…                           # Rest if you have..
-|
-|- components/
-|	|- __components-dir.scss    # Import all components .scss files
-|	|- _button.scss             # Button Styles
-|	|- _input.scss              # Input Styles
-|	|- _modal.scss              # Modal Styles
-|	…	                        # Rest if you have..
-|
-|- layouts/
-|	|- __layouts-dir.scss       # Import all layouts .scss files
-|	|- _footer.scss             # Footer Styles
-|	|- _main-menu.scss          # Main Navigation Styles
-|	…                           # Rest if you have..
-|
-|- vendor/
-|	|- __vendor-dir.scss        # Import vendor folders (All of the out side tools that you need for your project)
-|	|- fontawesome/             # Font Awesome
-|	|- normalize/               # Normalize
-|	…                           # Rest if you have..
-|
-main.scss                       # Main Scss File
-```
+![log-in-flexbox](./images/flexbox-1.png)
 
-## Importing
+### About Project
 
-in `main.scss`you need to import all of the files that ends with `-dir.scss`
-keep on mind all the files names should starts with `_` besides your `main.scss`
-Also your vendors and abstracts should be the first ones that you import
+This project is part of the Digital Career Institute curriculum. It is meant to implement the Basics of CSS. On the main branch(under construction), the project was done mainly with positioning, margin and not all of the flexbox tools.
+The purpose of this exercise is it practice the legacy approaches on building design.  
+Currently the web application is updated in order to have Responsive Design for tablets, large phones, standard laptops and desktops.
 
-```
-//Vendor
-@import "vendor/__vendor-dir";
+### How to use this Project
 
-//Abstracts
-@import "abstracts/__abstracts-dir";
+Please check the branch "flexbox" if you want to check the code! It as a boiler plate for your future website, feel free to use it! </br>
 
-//Base Styles
-@import "base/__base-dir";
+##### Developed With
 
-//Components
-@import "components/__components-dir";
+- [x] _HTML5_
+- [ ] _CSS3_
+- [x] _SASS_
+- [x] _SCSS_
+- [x] _JavaScript_
+- [ ] _React_
+- [ ] _Bootstrap_
 
-//Layout
-@import "layouts/__layouts-dir";
+---
 
-```
+### Contact
 
-## File Declaration
+Mail: <michaeltenev@mail.com><br>
+GitHub: [michaeltenev](https://github.com/maykaltenev)<br>
+LinkedIn: [Maykal Tenev](https://www.linkedin.com/in/maykal-tenev-a8729586/)
 
-## `Vendors`
+---
 
-Here you will be adding all of the 3rd party tools say fontawesome, normalize and any other ones.
+### Used Tools
 
-## `Abstracts`
+- [npm](https://www.npmjs.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Adobe Color](https://color.adobe.com/create/color-wheel)
+- [FontAwesome](https://fontawesome.com/)
 
-Any Variables you will have mixins or functions, you can add here so it's kind of your owm setups for your project.
+### Recourses
 
-## `Base`
+- [MDN Web Docs](https://developer.mozilla.org/de/)
 
-You can set your customisations for your base, say your own normalize or any headlines general rules.
+---
 
-## `Components`
-
-Go deep in depth into your elements what Defines your webpage what components that you rely on say (forms, registration forms, Gallery, ...)
-tip: you will see actual use here when we start working with react 😉
-
-## `layout`
-
-Define your layout, how your webpage looks like.
-
-## Setup
-
-1. Clone this repository into a new project folder (replace `[project name]` with your project's name)
-
-   ```
-   git clone git@github.com:FbW-WD21-E11/sass-project-structure.git [project name]
-   ```
-
-1. Delete the boilerplate's git history to ensure that the project history only includes your commits
-
-   ```
-   cd <project name>
-   rm -rf .git
-   ```
-
-1. Edit `package.json` to add you project's name
-
-   `package.json`
-
-   ```json
-   {
-     "name": "[your project name]",
-     ...
-     "author": "[your name]"
-   }
-   ```
-
-1. Edit `src/index.html` to add your projects name
-
-   ```html
-   ...
-   <head>
-     ...
-     <title>[project name]</title>
-   </head>
-   ...
-   ```
-
-1. Start a new git repository and make an initial commit. This will make sure that you can work on your project with git.
-
-   ```
-   git init
-   git add . && git commit -m "Initial commit"
-   ```
-1. Install the dependencies
-
-   ```
-   npm install 
-   ```
-   or
-  ```
-   npm i
-   ```
-
-1. Happy coding ☘️ 
+Made with ❤️ by me
