@@ -5,6 +5,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: $wild-hover;
   .head {
     height: 10%;
     width: 50%;
@@ -13,38 +14,56 @@
       text-align: center;
     }
     p {
+      @include glow-border;
       width: 100%;
+
+      img {
+        width: 50%;
+      }
     }
   }
   .container {
     align-self: center;
+    justify-content: center;
     height: 25%;
     width: 100%;
     background-color: $wild-purple;
+
     .img {
-      width: 100%;
+      border-radius: 6rem;
+      width: 50rem;
       background-color: $mint;
-      img {
-        border-radius: 2rem;
+      a {
         width: 90%;
-        height: 80%;
+        img {
+          border-radius: 4rem;
+          width: 90%;
+          height: 80%;
+        }
       }
+    }
+    p {
+      @include glow-border;
     }
   }
 }
 // before that is only for iPhone11
 // responsive design for general mobile
 @media only screen and (min-width: 414px) and (max-width: 600px) {
-  .img {
+  .portfolio main .img {
     display: flex;
     justify-content: center;
   }
 }
 // bigger phone to small tablets
 @media only screen and (min-width: 600px) {
-  .container {
+  .portfolio main .img {
     display: flex;
     justify-content: space-evenly;
+    width: 5%;
+    a {
+      width: 50%;
+    }
     .img {
       display: flex;
       align-items: center;
@@ -68,8 +87,7 @@
       align-items: center;
       justify-content: space-around;
       img {
-        width: 500%;
-        border: 1px red solid;
+        width: 100%;
       }
     }
   }
@@ -83,5 +101,8 @@
 @media only screen and (min-width: 900px) {
   main .container {
     border: 2px black solid;
+  }
+  p {
+    font-size: 2rem;
   }
 }

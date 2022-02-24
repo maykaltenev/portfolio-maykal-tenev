@@ -20,3 +20,11 @@
     }
   }
 }
+@mixin glow-border {
+  display: flex;
+  border: 2px solid $glow-white;
+  border-radius: 1rem;
+  box-shadow: 2px 3px 5px $milky-green;
+  padding: 0.3rem 0.5rem;
+  margin: 1%;
+}
