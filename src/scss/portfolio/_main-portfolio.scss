@@ -10,11 +10,10 @@
     width: 50%;
     align-self: center;
     h1 {
-      align-self: flex-end;
       text-align: center;
     }
     p {
-      text-align: center;
+      width: 100%;
     }
   }
   .container {
@@ -27,13 +26,9 @@
       background-color: $glow-white;
       img {
         border-radius: 2rem;
-        width: 25rem;
-        height: 17rem;
+        width: 90%;
+        height: 80%;
       }
-    }
-    p {
-      width: 100%;
-      text-align: center;
     }
   }
 }
@@ -45,24 +40,49 @@
     justify-content: center;
   }
 }
-@media screen and (min-width: 600px) {
+// bigger phone to small tablets
+@media only screen and (min-width: 600px) {
   .container {
     display: flex;
-    align-items: center;
-    border: 1px red solid;
-
+    justify-content: space-evenly;
     .img {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+  p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+  }
+}
+//
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px red solid;
       img {
-        width: 15rem;
-        border: 1px rgb(0, 60, 255) solid;
+        width: 50rem;
+        border: 1px red solid;
       }
     }
-    .para-div {
-      display: flex;
-      flex-direction: column;
-      border: 2px red solid;
-
-      width: 15rem;
-    }
+  }
+  p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  main .container {
+    border: 2px black solid;
   }
 }
