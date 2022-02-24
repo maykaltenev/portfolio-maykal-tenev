@@ -7,12 +7,13 @@ main {
     "about";
   // cover photo
   .banner {
-    height: 50%;
+    height: 40%;
     width: 100%;
-    background-image: url(.././images/pawel-czerwinski-b7ibFp72VAg-unsplash.png);
+    background-image: url(../../images/brian-lundquist-I3qLDIdlOho-unsplash.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   //   Work experience
   article:nth-of-type(2) {
     grid-area: the-road;
@@ -21,128 +22,166 @@ main {
     background-color: $mint;
     display: flex;
     flex-direction: column;
-    border: 1px red solid;
-    //  cards
-    > div {
-      display: flex;
-      border: 2px solid $glow-white;
-      border-radius: 1rem;
-      box-shadow: 2px 3px 5px $milky-green;
-      width: 25rem;
-      padding: 0.3rem 0.5rem;
-      margin: 1%;
-      height: 7rem;
-    }
-    // all the even to the right
-    div .circle {
-      border-radius: 1rem;
-      width: 18rem;
-      height: 5rem;
-      border: 1px $dark-mint solid;
-      display: flex;
-      // inside year
-      .time-line {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: flex-end;
-      }
-    }
-    // text
-    p {
-      margin: 1% 1%;
-      padding: 0.4rem 0.5rem;
-      border-radius: 1rem;
-      border: 1px $dark-mint solid;
-      height: 80%;
-      text-align: justify;
-    }
-    p:hover {
-      height: 90%;
-      z-index: 1;
-      background-color: $milky-green;
-      box-shadow: 2px 3px 10px $deep-green;
-    }
-    :nth-child(even) {
-      align-self: flex-end;
-    }
-  }
-  //   about me section
-  article:nth-child(3) {
-    grid-area: about;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 60%;
-    background-color: $moss-green;
-    // photo on the left
-    .about-photo {
-      align-self: center;
-      img {
-        width: 20rem;
-        border-radius: 2rem;
-      }
-    }
-    // text on the right from photo
-    .about-main {
-      width: 50%;
-      height: 50%;
-      align-self: center;
-    }
-  }
-}
-// telephone is the default
-// starting big phones/tablets
-@media only screen and (min-width: 600px) {
-  .the-road .visit-card {
-    width: 28rem;
-    height: 12rem;
-  }
-  .the-road {
-    height: 100%;
-  }
-  .about {
-    height: 90%;
-    img {
-      align-self: center;
-      width: 30rem;
-    }
-  }
-}
-// responsive design tablet/small desktop
-@media only screen and (min-width: 900px) {
-  header nav :nth-child(2) {
-    display: block;
-    @include nav-header;
-    justify-content: center;
-    ul li a {
-      font-size: 1.6rem;
-    }
-  }
-  main article:nth-child(2) {
-    width: 100%;
-    display: flex;
     align-items: center;
-    .visit-card {
-      width: 45rem;
-      font-size: 1.3rem;
+    border: 1px red solid;
+    .digital {
+      width: 100%;
+      height: 30%;
+      border: 1px red solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .we-are {
+        height: 20%;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+      .movement {
+        font-size: 1.5rem;
+      }
+      ul {
+        display: flex;
+        width: 20rem;
+        height: 50%;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        li {
+          a {
+            width: 100%;
+            font-size: 3.5rem;
+            text-decoration: none;
+            align-self: space-around;
+            color: $milky-green;
+            cursor: pointer;
+          }
+        }
+      }
     }
-    div:nth-child(even) {
-      align-self: center;
-      margin-left: 15%;
+    //  cards is an exp for extra page
+    //   > div {
+    //     display: flex;
+    //     border: 2px solid $glow-white;
+    //     border-radius: 1rem;
+    //     box-shadow: 2px 3px 5px $milky-green;
+    //     width: 25rem;
+    //     padding: 0.3rem 0.5rem;
+    //     margin: 1%;
+    //     height: 7rem;
+    //   }
+    //   // all the even to the right
+    //   div .circle {
+    //     border-radius: 1rem;
+    //     width: 15rem;
+    //     height: 5rem;
+    //     border: 1px $dark-mint solid;
+    //     display: flex;
+    //     // inside year
+    //     .time-line {
+    //       display: flex;
+    //       height: 100%;
+    //       width: 100%;
+    //       justify-content: center;
+    //       align-items: flex-end;
+    //     }
+    //   }
+    //   // text
+    //   p {
+    //     margin: 1% 1%;
+    //     padding: 0.4rem 0.5rem;
+    //     border-radius: 1rem;
+    //     border: 1px $dark-mint solid;
+    //     height: 80%;
+    //     text-align: justify;
+    //   }
+    //   p:hover {
+    //     height: 90%;
+    //     z-index: 1;
+    //     background-color: $milky-green;
+    //     box-shadow: 2px 3px 10px $deep-green;
+    //   }
+    //   :nth-child(even) {
+    //     align-self: flex-end;
+    //   }
+    // }
+    //   about me section
+    article:nth-child(4) {
+      grid-area: about;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 60%;
+      background-color: $moss-green;
+      // photo on the left
+      .about-photo {
+        align-self: center;
+        img {
+          width: 5rem;
+          border-radius: 2rem;
+        }
+      }
+      // text on the right from photo
+      .about-main {
+        width: 50%;
+        height: 50%;
+        align-self: center;
+      }
     }
   }
-}
-@media only screen and (min-width: 1200px) {
-  header nav :nth-child(2) {
-    ul li a {
-      font-size: 2rem;
-    }
-  }
-  main .the-road > div:nth-child(n) {
-    width: 50rem;
-    height: 25rem;
-    font-size: 1.4rem;
-  }
+  // telephone is the default
+  // starting big phones/tablets
+  //   @media only screen and (min-width: 600px) {
+  //     .the-road .visit-card {
+  //       width: 28rem;
+  //       height: 12rem;
+  //     }
+  //     .the-road {
+  //       height: 100%;
+  //     }
+  //     .about {
+  //       height: 90%;
+  //       img {
+  //         align-self: center;
+  //         width: 30rem;
+  //       }
+  //     }
+  //   }
+  //   // responsive design tablet/small desktop
+  //   @media only screen and (min-width: 900px) {
+  //     header nav :nth-child(2) {
+  //       display: block;
+  //       @include nav-header;
+  //       justify-content: center;
+  //       ul li a {
+  //         font-size: 1.6rem;
+  //       }
+  //     }
+  //     main article:nth-child(2) {
+  //       width: 100%;
+  //       display: flex;
+  //       align-items: center;
+  //       .visit-card {
+  //         width: 45rem;
+  //         font-size: 1.3rem;
+  //       }
+  //       div:nth-child(even) {
+  //         align-self: center;
+  //         margin-left: 15%;
+  //       }
+  //     }
+  //   }
+  //   @media only screen and (min-width: 1200px) {
+  //     header nav :nth-child(2) {
+  //       ul li a {
+  //         font-size: 2rem;
+  //       }
+  //     }
+  //     main .the-road > div:nth-child(n) {
+  //       width: 50rem;
+  //       height: 25rem;
+  //       font-size: 1.4rem;
+  //     }
+  //   }
+  // }
 }
