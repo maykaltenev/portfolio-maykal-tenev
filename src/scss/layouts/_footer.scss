@@ -57,6 +57,10 @@
           text-decoration: none;
           color: $milky-green;
         }
+        a:hover {
+          padding-bottom: 3px;
+          color: $wild-hover;
+        }
       }
     }
   }

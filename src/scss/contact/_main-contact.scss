@@ -175,6 +175,9 @@
     ul li a {
       font-size: 1.6rem;
     }
+    header nav :nth-child(2):hover {
+      color: $wild-hover;
+    }
   }
   .contact main form {
     width: 50%;
@@ -194,7 +197,6 @@
       font-size: 2rem;
     }
   }
-
   .contact main {
     .head {
       font-size: 1.6rem;
