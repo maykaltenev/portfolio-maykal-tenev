@@ -7435,6 +7435,9 @@ readers do not read off random characters that represent icons */
 }
 
 /* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+/* Color Theme Swatches in Hex */
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in HSLA */
@@ -7446,7 +7449,7 @@ header {
   grid-area: top;
   width: 100%;
   height: 100%;
-  background-color: #52aba6;
+  background-color: #2e4059;
 }
 header nav {
   display: flex;
@@ -7477,159 +7480,104 @@ header .hamburger div {
 
 main {
   grid-area: main;
-  grid-template-rows: 5vh 100vh 10vh;
+  grid-template-rows: 5vh 60vh 25vh;
   grid-template-areas: "banner" "the-road" "about";
 }
 main .banner {
   height: 50%;
   width: 100%;
-  background-image: url(.././images/pawel-czerwinski-b7ibFp72VAg-unsplash.png);
+  background-image: url(../../images/brian-lundquist-I3qLDIdlOho-unsplash.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 main article:nth-of-type(2) {
   grid-area: the-road;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background-color: #8dd5f2;
   display: flex;
   flex-direction: column;
-  border: 1px red solid;
+  align-items: center;
 }
-main article:nth-of-type(2) > div {
+main article:nth-of-type(2) .digital {
+  margin-top: 3%;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main article:nth-of-type(2) .digital .we-are {
+  height: 50%;
+  font-size: 2rem;
+  font-weight: 900;
+}
+main article:nth-of-type(2) .digital .movement {
+  font-size: 1.5rem;
+}
+main article:nth-of-type(2) .digital ul {
+  display: flex;
+  width: 20rem;
+  height: 50%;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+main article:nth-of-type(2) .digital ul li a {
+  width: 100%;
+  font-size: 3.5rem;
+  text-decoration: none;
+  align-self: space-around;
+  color: #262626;
+  cursor: pointer;
+}
+main article:nth-of-type(2) .digital ul li a:hover {
+  color: #8f8dbf;
+}
+main article:nth-of-type(3) {
+  grid-area: about;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+  background: #4f4d8c;
+}
+main article:nth-of-type(3) .about-photo {
+  display: flex;
+  align-items: center;
+}
+main article:nth-of-type(3) .about-photo img {
+  margin-left: 5%;
+  width: 15rem;
+  height: 13rem;
+  border-radius: 2rem;
+}
+main article:nth-of-type(3) .about-main {
   display: flex;
   border: 2px solid #dbfdffe9;
   border-radius: 1rem;
+  color: #dbfdffe9;
   box-shadow: 2px 3px 5px #91ede7e9;
   width: 25rem;
   padding: 0.3rem 0.5rem;
   margin: 1%;
   height: 7rem;
-}
-main article:nth-of-type(2) div .circle {
-  border-radius: 1rem;
-  width: 18rem;
-  height: 5rem;
-  border: 1px #03a688cf solid;
-  display: flex;
-}
-main article:nth-of-type(2) div .circle .time-line {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: flex-end;
-}
-main article:nth-of-type(2) p {
-  margin: 1% 1%;
-  padding: 0.4rem 0.5rem;
-  border-radius: 1rem;
-  border: 1px #03a688cf solid;
-  height: 80%;
-  text-align: justify;
-}
-main article:nth-of-type(2) p:hover {
-  height: 90%;
-  z-index: 1;
-  background-color: #91ede7e9;
-  box-shadow: 2px 3px 10px #01261fdb;
-}
-main article:nth-of-type(2) :nth-child(even) {
-  align-self: flex-end;
-}
-main article:nth-child(3) {
-  grid-area: about;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 60%;
-  background-color: #025949d9;
-}
-main article:nth-child(3) .about-photo {
+  width: 25rem;
+  height: 15rem;
+  font-size: 1.5rem;
   align-self: center;
-}
-main article:nth-child(3) .about-photo img {
-  width: 20rem;
-  border-radius: 2rem;
-}
-main article:nth-child(3) .about-main {
-  width: 50%;
-  height: 50%;
-  align-self: center;
+  align-items: center;
+  text-align: center;
 }
 
-@media only screen and (min-width: 600px) {
-  .the-road .visit-card {
-    width: 28rem;
-    height: 12rem;
-  }
-
-  .the-road {
-    height: 100%;
-  }
-
-  .about {
-    height: 90%;
-  }
-  .about img {
-    align-self: center;
-    width: 30rem;
-  }
-}
-@media only screen and (min-width: 900px) {
-  header nav :nth-child(2) {
-    display: block;
-    justify-content: center;
-  }
-  header nav :nth-child(2) ul {
-    display: flex;
-    width: 40rem;
-    height: 80%;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-  }
-  header nav :nth-child(2) ul li a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #91ede7e9;
-  }
-  header nav :nth-child(2) ul li a {
-    font-size: 1.6rem;
-  }
-
-  main article:nth-child(2) {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  main article:nth-child(2) .visit-card {
-    width: 45rem;
-    font-size: 1.3rem;
-  }
-  main article:nth-child(2) div:nth-child(even) {
-    align-self: center;
-    margin-left: 15%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  header nav :nth-child(2) ul li a {
-    font-size: 2rem;
-  }
-
-  main .the-road > div:nth-child(n) {
-    width: 50rem;
-    height: 25rem;
-    font-size: 1.4rem;
-  }
-}
 .footer-main {
   grid-area: footer;
   width: 100%;
-  height: 25%;
+  height: 35%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(145, 145, 145, 0.852);
+  background-color: #2e4059;
 }
 .footer-main .footer-nav {
   width: 100%;
@@ -7651,7 +7599,8 @@ main article:nth-child(3) .about-main {
 }
 .footer-main .footer-nav ul li a:hover {
   padding-bottom: 3px;
-  border-bottom: 2px #91ede7e9 solid;
+  color: #8f8dbf;
+  border-bottom: 1px #8f8dbf solid;
   transition: 0.4 ease-in;
 }
 .footer-main hr {
@@ -7679,6 +7628,10 @@ main article:nth-child(3) .about-main {
   text-decoration: none;
   color: #91ede7e9;
 }
+.footer-main .second-nav ul li a:hover {
+  padding-bottom: 3px;
+  color: #8f8dbf;
+}
 .footer-main span {
   display: flex;
   justify-content: right;
@@ -7689,7 +7642,7 @@ main article:nth-child(3) .about-main {
 body {
   width: 100vw;
   display: grid;
-  grid-template-rows: 15vh 100vh 22vh;
+  grid-template-rows: 15vh 70vh 22vh;
   grid-template-areas: "top" "main" "footer";
 }
 
@@ -7697,7 +7650,7 @@ body {
   grid-area: top;
   width: 100%;
   height: 100%;
-  background-color: #d5e8ed;
+  background-color: #2e4059;
 }
 .portfolio header nav {
   display: flex;
@@ -7732,6 +7685,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #8f8dbf;
 }
 .portfolio main .head {
   height: 10%;
@@ -7742,36 +7696,62 @@ body {
   text-align: center;
 }
 .portfolio main .head p {
+  display: flex;
+  border: 2px solid #dbfdffe9;
+  border-radius: 1rem;
+  box-shadow: 2px 3px 5px #91ede7e9;
+  padding: 0.3rem 0.5rem;
+  margin: 1%;
   width: 100%;
+}
+.portfolio main .head p img {
+  width: 50%;
 }
 .portfolio main .container {
   align-self: center;
+  justify-content: center;
   height: 25%;
   width: 100%;
-  background-color: #03a688cf;
+  background-color: #4f4d8c;
 }
 .portfolio main .container .img {
-  width: 100%;
-  background-color: #dbfdffe9;
+  border-radius: 6rem;
+  width: 50rem;
+  background-color: #8dd5f2;
 }
-.portfolio main .container .img img {
-  border-radius: 2rem;
+.portfolio main .container .img a {
+  width: 90%;
+}
+.portfolio main .container .img a img {
+  border-radius: 4rem;
   width: 90%;
   height: 80%;
 }
+.portfolio main .container p {
+  display: flex;
+  border: 2px solid #dbfdffe9;
+  border-radius: 1rem;
+  box-shadow: 2px 3px 5px #91ede7e9;
+  padding: 0.3rem 0.5rem;
+  margin: 1%;
+}
 
 @media only screen and (min-width: 414px) and (max-width: 600px) {
-  .img {
+  .portfolio main .img {
     display: flex;
     justify-content: center;
   }
 }
 @media only screen and (min-width: 600px) {
-  .container {
+  .portfolio main .img {
     display: flex;
     justify-content: space-evenly;
+    width: 5%;
   }
-  .container .img {
+  .portfolio main .img a {
+    width: 50%;
+  }
+  .portfolio main .img .img {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -7795,8 +7775,7 @@ body {
     justify-content: space-around;
   }
   .container .img img {
-    width: 500%;
-    border: 1px red solid;
+    width: 100%;
   }
 
   p {
@@ -7810,6 +7789,10 @@ body {
   main .container {
     border: 2px black solid;
   }
+
+  p {
+    font-size: 2rem;
+  }
 }
 .footer-portfolio {
   grid-area: footer;
@@ -7817,7 +7800,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(145, 145, 145, 0.852);
+  background-color: #4f4d8c;
 }
 .footer-portfolio .footer-nav {
   width: 100%;
@@ -7876,7 +7859,7 @@ body {
 .portfolio {
   width: 100vw;
   display: grid;
-  grid-template-rows: 15vh 450vh 35vh;
+  grid-template-rows: 15vh 400vh 35vh;
   grid-template-areas: "top" "main" "footer";
 }
 
@@ -7884,7 +7867,7 @@ body {
   grid-area: top;
   width: 100%;
   height: 100%;
-  background-color: #d5e8ed;
+  background-color: #2e4059;
 }
 .contact header nav {
   display: flex;
@@ -7999,6 +7982,16 @@ body {
 .contact main form input[type=email] {
   width: 8rem;
 }
+.contact main form input[type=button] {
+  margin: 1% 5%;
+  align-self: flex-start;
+  width: 7rem;
+  height: 3rem;
+  background: radial-gradient(#e66465, #9198e5);
+  border-color: #91ede7e9;
+  color: #232526;
+  border-radius: 3rem;
+}
 .contact main form .service {
   margin: 1%;
   width: 80%;
@@ -8080,6 +8073,9 @@ body {
   header nav :nth-child(2) ul li a {
     font-size: 1.6rem;
   }
+  header nav :nth-child(2) header nav :nth-child(2):hover {
+    color: #8f8dbf;
+  }
 
   .contact main form {
     width: 50%;
@@ -8091,7 +8087,6 @@ body {
   }
   .contact main form .service {
     width: 40%;
-    border: 1px red solid;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -8099,10 +8094,19 @@ body {
     font-size: 2rem;
   }
 
+  .contact main .head {
+    font-size: 1.6rem;
+  }
+  .contact main .head p {
+    text-align: right;
+  }
   .contact main form input[type=text],
 .contact main form input[type=telephone],
 .contact main form input[type=email] {
     width: 15rem;
+  }
+  .contact main form input[type=button] {
+    margin-left: 10%;
   }
 }
 .footer-contact {
@@ -8112,11 +8116,11 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(145, 145, 145, 0.852);
+  background-color: #2e4059;
 }
 .footer-contact .footer-nav {
   width: 100%;
-  height: 15%;
+  height: 25%;
   border-top: 3px #01261fdb solid;
 }
 .footer-contact .footer-nav ul {
@@ -8172,151 +8176,41 @@ body {
 .contact {
   width: 100vw;
   display: grid;
-  grid-template-rows: 15vh 150vh 30vh;
+  grid-template-rows: 15vh 100vh 30vh;
   grid-template-areas: "top" "main" "footer";
 }
 
-.adventure main {
-  grid-area: main;
-  width: 100%;
-  height: 100;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: #5f5da6;
-  background-image: url(".././images/backgrounds/contact.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.adventure main .head {
-  width: 80%;
-  height: 3%;
-  align-self: center;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.adventure main ul {
-  list-style: none;
-  display: flex;
-  width: 90%;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-.adventure main li {
-  justify-content: space-evenly;
-}
-.adventure main li a {
-  text-decoration: none;
-  color: #91ede7e9;
-}
-.adventure main li a:hover {
-  border-bottom: 4px #03a688cf solid;
-}
-.adventure main form {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  padding-top: 5%;
-  width: 70%;
-  height: 40%;
-  font-size: 1.1rem;
-  background: radial-gradient(#e66465, #9198e5);
-  color: #232526;
-  border-top: 5px #91ede7e9 solid;
-  border-bottom: 5px #91ede7e9 solid;
-  border-left: 2px #3bc5c8f2 solid;
-  border-right: 2px #d00a0a95 solid;
-  background-color: #5b8fc69b;
-  box-shadow: 0 0.5rem 5rem 1rem #cde5fe9b;
-  border-radius: 2rem;
-}
-.adventure main form .f-name-email {
-  margin: 1%;
-  width: 100%;
-  height: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.adventure main form .f-name-email .mail-info,
-.adventure main form .f-name-email .client-info {
-  height: 10%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-self: flex-start;
-}
-.adventure main form .f-name-email .mail-info div,
-.adventure main form .f-name-email .client-info div {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.adventure main form input[type=text],
-.adventure main form input[type=telephone],
-.adventure main form input[type=email] {
-  width: 8rem;
-}
-.adventure main form .service {
-  margin: 1%;
-  width: 80%;
-  height: 25%;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: space-evenly;
-}
-.adventure main form .service span {
-  font-weight: 900;
-}
-.adventure main form .service span input[type=checkbox] {
-  width: 1.5rem;
-  height: 1.3rem;
-}
-.adventure main form .budget-project {
-  margin: 1%;
-  width: 80%;
-  height: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-self: center;
-}
-.adventure main form .budget-project span {
-  font-weight: 900;
-  align-self: center;
-}
-.adventure main form .about-project {
-  width: 80%;
-  height: 20%;
-  display: flex;
-  margin: 1%;
-  flex-direction: column;
-  align-self: center;
-}
-.adventure main form .about-project label {
-  font-weight: 900;
-}
-.adventure main form .about-project textarea {
+.contact header {
+  grid-area: top;
   width: 100%;
   height: 100%;
+  background-color: #d5e8ed;
 }
-.adventure main .map {
+.contact header nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+.contact header :first-child img {
   width: 60%;
-  height: 20%;
-  align-self: center;
-  box-shadow: 1rem 0.5rem 4rem 1rem #db3df77e;
+  height: 100%;
 }
-.adventure main .map p {
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  text-align: center;
-  font-weight: 900;
-  border: 2px #db3df77e transparent;
+.contact header nav:nth-child(2) {
+  display: none;
+}
+.contact header .hamburger {
+  width: 4rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-self: center;
+}
+.contact header .hamburger div {
+  width: 2rem;
+  height: 0.4rem;
+  background-color: black;
+  border-radius: 4px;
+  border: 0.05rem black solid;
 }
 
 @media only screen and (min-width: 900px) {
@@ -8346,35 +8240,34 @@ body {
     font-size: 2rem;
   }
 }
-.adventure {
-  background-color: #5f5da6;
+.adventure main {
+  grid-area: main;
+  height: 100%;
+  border: 1px red solid;
 }
-.adventure .head {
+.adventure main .head {
   width: 80%;
   height: 15%;
   align-self: center;
   margin-bottom: 2rem;
   text-align: center;
 }
-.adventure article {
+.adventure main article {
   display: flex;
-  background-image: url(".././images/backgrounds/contact.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.adventure article div {
+.adventure main article div {
   width: 75%;
   height: 45%;
   border: 1px #03a688cf solid;
   border-radius: 5%;
   background-color: #94e1d2;
 }
-.adventure article div p {
+.adventure main article div p {
   width: 100%;
   height: 90%;
   border: 1px #8dd5f2 solid;
@@ -8383,7 +8276,7 @@ body {
   margin-top: 5%;
   text-align: center;
 }
-.adventure article div:nth-child(odd) {
+.adventure main article div:nth-child(odd) {
   flex-direction: column;
   align-self: flex-end;
   height: 45%;
@@ -8430,7 +8323,8 @@ body {
   justify-content: space-between;
 }
 .footer-adventure .second-nav img {
-  width: 10rem;
+  width: 7rem;
+  margin-left: 2%;
 }
 .footer-adventure .second-nav ul {
   display: flex;
@@ -8455,7 +8349,7 @@ body {
 .adventure {
   width: 100vw;
   display: grid;
-  grid-template-rows: 15vh 100vh 5vh;
+  grid-template-rows: 15vh 100vh 22vh;
   grid-template-areas: "top" "main" "footer";
 }
 
