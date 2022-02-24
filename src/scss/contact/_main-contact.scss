@@ -17,6 +17,9 @@
     align-self: center;
     margin-bottom: 2rem;
     text-align: center;
+    p {
+      width: 100%;
+    }
   }
   ul {
     list-style: none;
@@ -133,22 +136,9 @@
       textarea {
         width: 100%;
         height: 100%;
-        border: 1px red solid;
       }
     }
   }
-  // content with purple glow behind the form
-  // form::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 35rem;
-  //   background-color: rgba(172, 91, 96, 0.688);
-  //   box-shadow: 0 0.5rem 1rem 1rem #db3df77e;
-
-  //   border-radius: 6rem;
-  // }
-  // address
   .map {
     display: flex;
     justify-content: space-evenly;
@@ -168,7 +158,6 @@
 // responsive design tablet/small desktop
 @media only screen and (min-width: 900px) {
   header nav :nth-child(2) {
-    border: 1px red solid;
     display: block;
     @include nav-header;
     justify-content: center;
@@ -176,11 +165,31 @@
       font-size: 1.6rem;
     }
   }
+  .contact main form {
+    width: 50%;
+    input[type="text"],
+    input[type="telephone"],
+    input[type="email"] {
+      width: 12rem;
+    }
+    .service {
+      width: 40%;
+
+      border: 1px red solid;
+    }
+  }
 }
 @media only screen and (min-width: 1200px) {
   header nav :nth-child(2) {
     ul li a {
       font-size: 2rem;
+    }
+  }
+  .contact main form {
+    input[type="text"],
+    input[type="telephone"],
+    input[type="email"] {
+      width: 15rem;
     }
   }
 }
