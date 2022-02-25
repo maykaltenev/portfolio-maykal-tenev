@@ -7486,9 +7486,14 @@ main {
 main .banner {
   height: 50%;
   width: 100%;
-  background-image: url(../../images/brian-lundquist-I3qLDIdlOho-unsplash.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+main .banner .img-banner {
+  width: 100%;
+  height: 100%;
+}
+main .banner .img-banner img {
+  width: 100%;
+  height: 100%;
 }
 main article:nth-of-type(2) {
   grid-area: the-road;
