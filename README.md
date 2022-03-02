@@ -4,9 +4,6 @@
 
 ---
 
-![log-in-first](./images/log-in-first.png)
-
-## The updated version you can find in the branch flexbox
 
 ![log-in-flexbox](./images/flexbox-1.png)
 
